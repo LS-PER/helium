@@ -32,7 +32,10 @@ rm -rf $GATEWAY_RS_PATH/*
 echo "🍺rm -rf $GATEWAY_RS_PATH/*"
 
 # Download the gateway_rs programe
-wget "https://github.com/helium/gateway-rs/releases/download/$GATEWAY_VERSION/$GATEWAY_FILE" -P "$GATEWAY_RS_PATH/"
+
+
+wget "https://github.com/helium/gateway-rs/releases/download/v1.2.1/helium-gateway-1.2.1-armv7-unknown-linux-musleabihf.tar.gz" -P "$GATEWAY_RS_PATH/"
+#wget "https://github.com/helium/gateway-rs/releases/download/$GATEWAY_VERSION/$GATEWAY_FILE" -P "$GATEWAY_RS_PATH/"
 wait
 # Unzip the pack
 tar -xvf "$GATEWAY_RS_PATH/$GATEWAY_FILE" -C "$GATEWAY_RS_PATH/"
